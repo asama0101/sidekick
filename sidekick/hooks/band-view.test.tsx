@@ -97,6 +97,14 @@ test('limits, git, and omitted lines', async () => {
   expect(texts({ git: { branch: null, dirtyCount: null } })).toContain('🌿 (detached)')
 })
 
+test('the branch is drawn right under the directory, above the limits', async () => {
+  const t = texts({ model: 'Opus 5.5', cwd: 'D:/p', git: { branch: 'main', dirtyCount: 2 }, limits: [{ label: '5時間枠', percent: 32, remaining: null }] })
+  expect(t.indexOf('🌿 main')).toBe(t.indexOf('📁 D:/p') + 1)
+  expect(t.indexOf('⏳ 5時間枠')).toBeGreaterThan(t.indexOf('未 commit 2'))
+  // ディレクトリが無くても、ブランチだけで見出しの下に出る。
+  expect(texts({ git: { branch: 'main', dirtyCount: null } })).toEqual(['Session', '🌿 main'])
+})
+
 const BREAKDOWN = (compact: number | null = 40_000) => ({
   exact: false,
   legendHidden: false,
