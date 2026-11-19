@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 928 740" width="928" height="740" role="img" aria-labelledby="t d" font-family="Consolas, 'Cascadia Mono', 'MS Gothic', 'Noto Sans Mono CJK JP', monospace" font-size="15" style="white-space:pre">
+  <title id="t">Sidekick のパネル（イメージ）</title>
+  <desc id="d">左に Claude Code の会話と、入力欄の上の「サイドパネルの開閉」ボタン。右にパネル。パネルは上から、見出し（Session とモデル名 Sonnet 5.5 / high）、ディレクトリ、ブランチ名、ゴール、停止中の状態、コンテキスト（使用率 58%、色分けのバー、「▸ 凡例」）、自動 compact までの残りと「正確に数える」、5時間枠と 7日枠、タブの行（定型文・履歴・Git）、定型文の一覧 3 件の順に並ぶ。</desc>
+  <rect x="0" y="0" width="928" height="740" rx="10" fill="#1e1e1e"/>
+  <rect x="0.5" y="0.5" width="927" height="739" rx="10" fill="none" stroke="#3c3c3c"/>
+  <rect x="384" y="0" width="1.0" height="740" fill="#3c3c3c"/>
+  <text x="20" y="58" fill="#858585">&gt; 残りのタスクを教えて</text>
+  <text x="20" y="102" fill="#d4d4d4">●</text>
+  <text x="38" y="102" fill="#d4d4d4">未完了のタスクは 2 件です。</text>
+  <text x="38" y="124" fill="#858585">1. README を作り直す</text>
+  <text x="38" y="146" fill="#858585">2. 図を作り直す</text>
+  <rect x="20.5" y="610.5" width="210" height="30" rx="4" fill="none" stroke="#b1b9f9"/>
+  <text x="34" y="630" fill="#b1b9f9">サイドパネルの開閉</text>
+  <rect x="20.5" y="652.5" width="343" height="62" rx="6" fill="none" stroke="#5a5a5a"/>
+  <text x="36" y="676" fill="#858585">&gt;</text>
+  <text x="404.0" y="36" fill="#d4d4d4" font-weight="bold">Session</text>
+  <text x="479.0" y="36" fill="#d4d4d4">🤖</text>
+  <text x="511.0" y="36" fill="#4fd6e0" font-weight="bold">Sonnet 5.5</text>
+  <text x="609.0" y="36" fill="#858585">/</text>
+  <text x="626.0" y="36" fill="#4fd6e0" font-weight="bold">high</text>
+  <text x="404.0" y="58" fill="#858585">📁 C:\project\my-app</text>
+  <text x="404.0" y="80" fill="#4fd6e0">🌿 main</text>
+  <text x="489.0" y="80" fill="#d4d4d4">未 commit 0</text>
+  <rect x="404" y="112" width="504.0" height="1" fill="#464a54"/>
+  <text x="404.0" y="144" fill="#858585">🎯 ゴール</text>
+  <text x="495.5" y="144" fill="#d4d4d4">README と図を作り直す</text>
+  <text x="404.0" y="166" fill="#858585">💤 停止中</text>
+  <text x="495.5" y="166" fill="#d4d4d4">直近 1m42s</text>
+  <text x="596.5" y="166" fill="#d4d4d4">18k tokens</text>
+  <rect x="404" y="198" width="504.0" height="1" fill="#464a54"/>
+  <text x="404.0" y="230" fill="#858585">📊 コンテキスト</text>
+  <text x="550.0" y="230" fill="#858585">▸ 凡例</text>
+  <text x="904" y="230" fill="#6fcf97" text-anchor="end">116k / 200k</text>
+  <text x="791" y="230" fill="#6fcf97" font-weight="bold" text-anchor="end">58%</text>
+  <rect x="404" y="238" width="504.0" height="18" fill="#55555a"/>
+  <rect x="404" y="238" width="156.2" height="18" fill="#61afef"/>
+  <rect x="560.24" y="238" width="35.3" height="18" fill="#c678dd"/>
+  <rect x="595.52" y="238" width="30.2" height="18" fill="#56b6c2"/>
+  <rect x="625.76" y="238" width="20.2" height="18" fill="#7ec699"/>
+  <rect x="645.92" y="238" width="12.6" height="18" fill="#e5c07b"/>
+  <rect x="658.52" y="238" width="7.6" height="18" fill="#d19a66"/>
+  <rect x="666.0799999999999" y="238" width="30.2" height="18" fill="#8b8b8b"/>
+  <text x="404.0" y="296" fill="#858585">自動 compact まで あと 21k（閾値 137k）</text>
+  <text x="744.0" y="296" fill="#858585">概算</text>
+  <text x="789.0" y="296" fill="#b1b9f9">正確に数える</text>
+  <text x="404.0" y="340" fill="#858585">⏳ 5時間枠</text>
+  <rect x="530" y="330" width="108.0" height="10" fill="#3a3d44"/>
+  <rect x="530" y="330" width="34.6" height="10" fill="#6fcf97"/>
+  <text x="650" y="340" fill="#6fcf97">32%</text>
+  <text x="702" y="340" fill="#858585">3h 10m</text>
+  <text x="404.0" y="362" fill="#858585">📅 7日枠</text>
+  <rect x="530" y="352" width="108.0" height="10" fill="#3a3d44"/>
+  <rect x="530" y="352" width="11.9" height="10" fill="#6fcf97"/>
+  <text x="650" y="362" fill="#6fcf97">11%</text>
+  <text x="702" y="362" fill="#858585">4d 2h</text>
+  <rect x="404" y="392" width="504.0" height="1" fill="#464a54"/>
+  <text x="404" y="424" fill="#4fd6e0" font-weight="bold">💬 定型文</text>
+  <rect x="404" y="429" width="75.5" height="1" fill="#4fd6e0"/>
+  <text x="519.5" y="424" fill="#858585">🕘 履歴</text>
+  <text x="619.5" y="424" fill="#858585">🔀 Git</text>
+  <rect x="404.5" y="440.5" width="503" height="28" rx="4" fill="none" stroke="#5a5a5a"/>
+  <text x="420" y="459" fill="#858585">新しい定型文を入力して Enter</text>
+  <text x="404" y="500" fill="#d4d4d4">残りのタスクを教えて</text>
+  <text x="404.0" y="522" fill="#b1b9f9">▶ 送信</text>
+  <text x="479.5" y="522" fill="#ff6b80">× 削除</text>
+  <text x="555.0" y="522" fill="#555a65">▲ 上へ</text>
+  <text x="630.5" y="522" fill="#858585">▼ 下へ</text>
+  <text x="404" y="566" fill="#d4d4d4">テストを実行して、失敗を直して</text>
+  <text x="404.0" y="588" fill="#b1b9f9">▶ 送信</text>
+  <text x="479.5" y="588" fill="#ff6b80">× 削除</text>
+  <text x="555.0" y="588" fill="#858585">▲ 上へ</text>
+  <text x="630.5" y="588" fill="#858585">▼ 下へ</text>
+  <text x="404" y="632" fill="#d4d4d4">README を最新の状態にして</text>
+  <text x="404.0" y="654" fill="#b1b9f9">▶ 送信</text>
+  <text x="479.5" y="654" fill="#ff6b80">× 削除</text>
+  <text x="555.0" y="654" fill="#858585">▲ 上へ</text>
+  <text x="630.5" y="654" fill="#555a65">▼ 下へ</text>
+</svg>
