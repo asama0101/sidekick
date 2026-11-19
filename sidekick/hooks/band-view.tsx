@@ -226,12 +226,12 @@ export function renderBand(ui: Ui, a: BandArgs) {
       </Box>
     )
 
-  // 外枠は無い。パネルは、状態・コンテキスト・利用枠とブランチ・タブ（と内容）・提案を、細い線で区切って並べる。提案の前だけ二重線。
+  // 外枠は無い。パネルは、状態・コンテキスト・利用枠・タブ（と内容）・提案を、細い線で区切って並べる。提案の前だけ二重線。ブランチは、ディレクトリの下に出す。
   const width = Math.max(8, (a.columns ?? RULE_WIDTH + 2) - 2)
   const thin = <Text color={LINE_COLOR}>{'─'.repeat(width)}</Text>
   const double = <Text color={LINE_COLOR}>{'═'.repeat(width)}</Text>
   const top = a.goal !== null || runLine !== null
-  const foot = limits !== null || git !== null
+  const foot = limits !== null
   const sections: [string, boolean, any][] = [
     [
       'top',
@@ -250,15 +250,12 @@ export function renderBand(ui: Ui, a: BandArgs) {
     [
       'foot',
       foot,
-      <Box flexDirection="column">
-        {limits}
-        {git}
-      </Box>,
+      <Box flexDirection="column">{limits}</Box>,
     ],
     ['between', a.between !== undefined, a.between],
   ]
   const shown = sections.filter(([, on]) => on)
-  const hasHead = a.model !== null || shown.some(([key]) => key !== 'between')
+  const hasHead = a.model !== null || shown.some(([key]) => key !== 'between') || git !== null
   const drawn = hasHead || a.between !== undefined || steps !== null
 
   return (
@@ -285,6 +282,7 @@ export function renderBand(ui: Ui, a: BandArgs) {
             </Box>
           )}
           {hasHead && a.cwd !== null && <Text dimColor>{`${ICONS.dir} ${clean(fitTail(a.cwd, Math.max(8, (a.columns ?? RULE_WIDTH + 2) - 2 - ICON_CELLS)))}`}</Text>}
+          {hasHead && git}
           {shown.map(([key, , node], n) => (
             <Box key={`sec-${key}`} flexDirection="column">
               {n > 0 && key !== 'foot' && <Box marginY={1}>{thin}</Box>}
